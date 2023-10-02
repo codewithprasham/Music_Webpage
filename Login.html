@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>LOGIN</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        background-image: url(https://www.itl.cat/pngfile/big/172-1726523_microphone-black-and-white-string-guitar-still-acoustic.jpg);
+            background-size:1600px 900px
+            }
+        .container {
+            max-width: 400px;
+            margin-top: 50px;
+            margin-left: 50px;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="password"] {
+            width:95%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        button {
+            background-color: black;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+            align-items: center;
+            margin-left:160px ;
+        }
+        button:hover {
+            background-color:gray;
+        }
+        li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color:#111; }
+ 
+  .icon{margin-top: 300px;
+          color:white;
+          margin-left:80px;
+        }
+
+    </style> 
+
+</head>
+<body>
+    <ul>
+        <li><a class="active" href="D:\Users\admin\Desktop\WD MUSIC WEBSITE\MUSIC _WEBSITE.html">HOME</a></li>
+        <li><a href="D:\Users\admin\Desktop\WD MUSIC WEBSITE\REGISTRATION.html">REGISTRATION</a></li>
+        <li><a href="D:\Users\admin\Desktop\WD MUSIC WEBSITE\Login.html">LOGIN</a></li>
+        <li><a href="D:\Users\admin\Desktop\WD MUSIC WEBSITE\INVENTORY.html">INVENTORY</a></li>
+        <li><a href="D:\Users\admin\Desktop\WD MUSIC WEBSITE\SUPPORT.html">SUPPORT</a></li>
+        </ul> 
+<br><br><br><br>
+    <div class="container">
+        <h2>Login</h2>
+        <form id="login-form">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    <div class="icon">www.percussionparadise.in</div> 
+
+    <script>
+        document.getElementById("login-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // You can add your authentication logic here
+            // For this example, let's just display an alert
+            alert("Login successful!");
+        });
+    </script>
+</body>
+</html>

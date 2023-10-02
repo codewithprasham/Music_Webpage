@@ -1,0 +1,78 @@
+
+        ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:#333;
+  width: fit-content;
+}
+        li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color:#111; }
+  li {
+  float: left;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(https://i.pinimg.com/736x/b0/eb/41/b0eb41bdb91e75f326a0b1056fa088c6.jpg);
+    background-size: 1600px 900px;
+    
+}
+
+/* Style the product gallery container */
+.product-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Style each product item */
+.product-item {
+    position: absolute;
+    width: 400px;
+    height: auto;
+}
+
+/* Style the product image */
+.product-item img {
+    width: 100%;
+    height: auto; 
+    transition: transform 0.3s;
+}
+
+/* Style the product info (hidden by default) */
+.product-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px;
+    transform: translateY(100%);
+    transition: transform 0.3s;
+}
+
+/* Hover effect to show product info */
+.product-item:hover img {
+    transform: scale(1.1);
+}
+
+.product-item:hover .product-info {
+    transform : translateY(0);
+}
+.icon{margin-top:150px;
+    color:white;
+    margin-left:80px;
+    margin-bottom: auto;
+  }
