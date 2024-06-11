@@ -45,6 +45,7 @@ body {
 
 /* Style the product image */
 .product-item img {
+        display: flex;
     width: 100%;
     height: auto; 
     transition: transform 0.3s;
